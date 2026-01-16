@@ -489,14 +489,25 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <p class="modal-title">Leave your contacts and we will call you back
         </p>
-        <button type="button" class="modal-close-btn"><svg width="8" height="8">
+        <button type="button" class="modal-close-btn">
+          <svg width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg></button>
-        <form></form>
+        <form class ="modal-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Comment</label>
+          <textarea class="modal-form-textarea" id="message" name="message" placeholder="Text input"></textarea>
+          <button type="submit">Send</button>
+        </form>      
       </div>
     </div>
   </body>
