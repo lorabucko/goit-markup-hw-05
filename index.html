@@ -469,9 +469,9 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <label class="footer-lable" for="footer-subscribe">Subscribe</label>
-          <div class="footer-input-wrapper">
+        <div class="footer-input-wrapper">
+          <p>Subscribe</p>
+          <form class="footer-form">
             <input
               class="footer-input"
               id="footer-subscribe"
@@ -479,17 +479,18 @@
               name="email"
               placeholder="E-mail"
             />
+            <label class="footer-lable" for="footer-subscribe"></label>
             <button class="subscribe-button" type="submit">
               Subscribe
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <button type="button" class="modal-close-btn">
@@ -534,7 +535,7 @@
           ></textarea>
           <div class="check">
             <input
-              class="hidden-checkbox"
+              class="visually-hidden"
               type="checkbox"
               id="consent"
               name="consent"
@@ -542,13 +543,10 @@
             />
             <label for="consent"
               ><span class="checkbox"
-                ><svg width="4" height="8">
+                ><svg width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use></svg></span
-              >I accept the terms and conditions of the<a
-                class="privacy"
-                href=""
-                >Privacy Policy</a
-              ></label
+              >I accept the terms and conditions of the
+              <a class="privacy" href="">Privacy Policy</a></label
             >
           </div>
           <button type="submit">Send</button>
