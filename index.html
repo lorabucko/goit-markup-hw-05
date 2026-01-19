@@ -527,9 +527,11 @@
           </div>
           <label for="message">Comment</label>
           <textarea class="modal-form-textarea" id="message" name="message" placeholder="Text input"></textarea>
-          <div>
-            <input type="checkbox" id="consent" name="consent" required>
-            <label for="consent"><span class="checkbox"></span>I accept the terms and conditions of the <a class="privacy" href="">Privacy Policy</a></label>
+          <div class="check">
+            <input class="hidden-checkbox" type="checkbox" id="consent" name="consent" required>
+            <label for="consent"><span class="checkbox"><svg width="4" height="8">
+              <use href="./images/icons.svg#icon-click"></use>
+            </svg></span>I accept the terms and conditions of the <a class="privacy" href="">Privacy Policy</a></label>
           </div>
           <button type="submit">Send</button>
         </form>      
