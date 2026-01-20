@@ -562,6 +562,7 @@ footer .social-link:focus {
     gap: 8px;
     margin-top: 16px;
     }
+
 .modal-form input, .modal-form textarea {
     font-weight: 400;
     font-size: 12px;
@@ -608,6 +609,11 @@ footer .social-link:focus {
 .input-wrapper input:focus+svg {
     fill: var(--iris);
 }
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 .modal-form button {
     font-family: var(--font-family);
     font-weight: 500;
@@ -619,7 +625,7 @@ footer .social-link:focus {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 16px 32px;
-    margin-top: 24px;
+    margin-top: 16px;
     cursor: pointer;
     width: 169px;
     height: 56px;
@@ -639,7 +645,8 @@ footer .social-link:focus {
 .check {
     display: flex;
     align-items: center;
-    margin-top: 16px;
+    padding-top: 8px;
+
 }
 .check label {
     display: flex;
